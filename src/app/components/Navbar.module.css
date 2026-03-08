@@ -1,0 +1,201 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: var(--transition);
+}
+
+.scrolled {
+    background: rgba(253, 251, 249, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 12px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.navContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.logoScript {
+    font-family: var(--font-script);
+    font-size: 2rem;
+    color: var(--color-gold);
+    transition: var(--transition);
+}
+
+.navbar:not(.scrolled) .logoScript {
+    color: var(--color-white);
+}
+
+.logoSub {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-top: 2px;
+}
+
+.navbar:not(.scrolled) .logoSub {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar:not(.scrolled) .navLinks a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navLinks a:not(.navCta)::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-gold);
+    transition: var(--transition);
+}
+
+.navLinks a:not(.navCta):hover::after {
+    width: 100%;
+}
+
+.navCta {
+    background: linear-gradient(135deg, var(--color-rose-deep), var(--color-rose));
+    color: var(--color-white) !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.navCta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(183, 110, 121, 0.3);
+}
+
+.navToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-dark);
+    position: relative;
+    transition: var(--transition);
+}
+
+.navbar:not(.scrolled) .hamburger {
+    background: var(--color-white);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: inherit;
+    transition: var(--transition);
+}
+
+.hamburger::before {
+    top: -7px;
+}
+
+.hamburger::after {
+    bottom: -7px;
+}
+
+.active .hamburger {
+    background: transparent;
+}
+
+.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+    background: var(--color-dark);
+}
+
+.active .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+    background: var(--color-dark);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+}
+
+@media (max-width: 768px) {
+    .navToggle {
+        display: block;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--color-white);
+        flex-direction: column;
+        padding: 100px 40px;
+        gap: 24px;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+        z-index: 999;
+    }
+
+    .navLinksActive {
+        right: 0;
+    }
+
+    .navLinks a {
+        color: var(--color-dark) !important;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,152 @@
+.testimonials {
+    background: linear-gradient(135deg, var(--color-dark) 0%, #3B2E28 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.label {
+    color: var(--color-gold-light) !important;
+}
+
+.title {
+    color: var(--color-white) !important;
+}
+
+.accent {
+    color: var(--color-gold-light) !important;
+    font-style: italic;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card {
+    min-width: 100%;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.stars i {
+    color: var(--color-gold);
+    font-size: 1.1rem;
+}
+
+.text {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 700px;
+    margin: 0 auto 32px;
+    line-height: 1.8;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-rose-deep), var(--color-rose));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.info h5 {
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.info span {
+    font-size: 0.8rem;
+    color: var(--color-gold-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.sliderBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderBtn:hover {
+    background: var(--color-gold);
+    border-color: var(--color-gold);
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    padding: 0;
+}
+
+.activeDot {
+    width: 24px;
+    border-radius: 4px;
+    background: var(--color-gold);
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 0 16px;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+}
