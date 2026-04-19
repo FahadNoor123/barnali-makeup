@@ -22,7 +22,7 @@ export default function BackToTop() {
                 <i className="fas fa-chevron-up"></i>
             </button>
             <a
-                href="https://wa.me/15551234567"
+                href="https://wa.me/03278045325"
                 className="whatsapp-float"
                 target="_blank"
                 rel="noopener noreferrer"
