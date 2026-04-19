@@ -1,11 +1,21 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Glamour by Aria | Professional Makeup Artist",
+  title: "Emaan Beautics | Professional Beauty Studio",
   description:
-    "Professional makeup artist specializing in bridal, party, editorial, and HD makeup. Book your appointment today for a flawless look.",
-  keywords:
-    "makeup artist, bridal makeup, party makeup, HD makeup, airbrush makeup, wedding makeup",
+    "Emaan Beautics offers bridal, party, skin, hair, and beauty services with clear pricing and personalized care.",
+  keywords: [
+    "beauty studio",
+    "bridal makeup",
+    "party makeup",
+    "skin treatments",
+    "hair styling",
+    "mehndi",
+  ],
+    icons: {
+    icon: "/favicons.ico", // or /favicon.png
+  },
+
 };
 
 export default function RootLayout({ children }) {

@@ -24,28 +24,28 @@ export default function Contact() {
                                 <i className="fas fa-phone-alt"></i>
                                 <div>
                                     <h5>Phone</h5>
-                                    <p>+1 (555) 123-4567</p>
+                                    <p>0327 8041234</p>
                                 </div>
                             </div>
                             <div className={styles.item}>
                                 <i className="fas fa-envelope"></i>
                                 <div>
                                     <h5>Email</h5>
-                                    <p>hello@glamourbyaria.com</p>
+                                    <p>contact@emanbeautics.com</p>
                                 </div>
                             </div>
                             <div className={styles.item}>
                                 <i className="fas fa-map-marker-alt"></i>
                                 <div>
                                     <h5>Location</h5>
-                                    <p>Serving Greater Metro Area<br />Home service available</p>
+                                    <p>Professional salon services with home visits available.</p>
                                 </div>
                             </div>
                             <div className={styles.item}>
                                 <i className="fas fa-clock"></i>
                                 <div>
                                     <h5>Business Hours</h5>
-                                    <p>Mon - Sat: 9:00 AM - 7:00 PM<br />Sun: By Appointment Only</p>
+                                    <p>Mon - Sat: 10:00 AM - 8:00 PM<br />Sun: By Appointment Only</p>
                                 </div>
                             </div>
                         </div>
@@ -89,11 +89,19 @@ export default function Contact() {
                                         <label htmlFor="package">Select Package</label>
                                         <select id="package" required defaultValue="">
                                             <option value="" disabled>Choose a package</option>
-                                            <option value="bridal">Bridal Makeup - $350</option>
-                                            <option value="engagement">Engagement Package - $250</option>
-                                            <option value="party">Party Makeup - $150</option>
-                                            <option value="photoshoot">Photoshoot Makeup - $200</option>
-                                            <option value="hd">HD / Airbrush Makeup - $180</option>
+                                            <option value="whitening">Whitening Facial - Rs 3,000</option>
+                                            <option value="skinpolish">Skin Polish with Hand & Feet - Rs 1,500</option>
+                                            <option value="waxing">Full Face Waxing - Rs 800</option>
+                                            <option value="manicure">Manicure & Pedicure - Rs 3,000</option>
+                                            <option value="mehndi">Mehndi Full Hands - Rs 1,000</option>
+                                            <option value="bridalMehndi">Bridal Mehndi - Rs 5,000</option>
+                                            <option value="bridal">Bridal Makeup - Rs 20,000</option>
+                                            <option value="engagement">Engagement Makeup - Rs 5,000</option>
+                                            <option value="nikah">Nikah Makeup - Rs 7,000</option>
+                                            <option value="party">Party Makeup - Rs 3,000</option>
+                                            <option value="hairStyling">Simple Hair Styling - Rs 500</option>
+                                            <option value="blowdry">Blowdryer Styling - Rs 1,500</option>
+                                            <option value="treatment">Keratin / Botox / Nanoplastia</option>
                                         </select>
                                     </div>
                                 </div>

@@ -5,28 +5,28 @@ import styles from './Testimonials.module.css';
 const testimonials = [
     {
         stars: 5,
-        text: '"Aria made me feel like an absolute queen on my wedding day! My makeup lasted the entire event and I received so many compliments. She truly understood my vision and brought it to life."',
+        text: '"Eman Beautics made me feel like an absolute queen on my wedding day! My makeup lasted the entire event and I received so many compliments. The artist truly understood my vision and brought it to life."',
         name: 'Sarah Ahmed',
         role: 'Bridal Client',
         initial: 'S',
     },
     {
         stars: 5,
-        text: '"I booked Aria for my engagement party and she did an incredible job! The makeup was flawless and lasted all night. She\'s so warm and professional — highly recommend!"',
+        text: '"I booked Eman Beautics for my engagement party and the look was incredible! The makeup was flawless and lasted all night. The service was warm and professional — highly recommend!"',
         name: 'Maria Khan',
         role: 'Engagement Client',
         initial: 'M',
     },
     {
         stars: 4.5,
-        text: '"Working with Aria on our editorial shoot was amazing. She brought creative ideas and executed them perfectly. The final photos looked stunning thanks to her artistry."',
+        text: '"Working with Eman Beautics on our editorial shoot was amazing. They brought creative ideas and executed them perfectly. The final photos looked stunning thanks to their artistry."',
         name: 'Rachel Torres',
         role: 'Fashion Photographer',
         initial: 'R',
     },
     {
         stars: 5,
-        text: '"Best makeup experience ever! Aria came to my home for the service and made the whole process so relaxing and enjoyable. My party look was absolutely perfect!"',
+        text: '"Best makeup experience ever! Eman Beautics came to my home for the service and made the whole process so relaxing and enjoyable. My party look was absolutely perfect!"',
         name: 'Fatima Noor',
         role: 'Party Makeup Client',
         initial: 'F',

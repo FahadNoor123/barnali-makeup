@@ -12,10 +12,10 @@ export default function Footer() {
                 <div className={styles.grid}>
                     <div className={styles.brand}>
                         <a href="#home" className={styles.logo}>
-                            <span className={styles.logoScript}>Glamour</span>
-                            <span className={styles.logoSub}>by Aria</span>
+                            <span className={styles.logoScript}>Emaan</span>
+                            <span className={styles.logoSub}>Beautics</span>
                         </a>
-                        <p>Professional makeup artistry for your most cherished moments. Enhancing beauty, one face at a time.</p>
+                        <p>Professional beauty services for your most cherished moments. Enhancing confidence with every look.</p>
                         <div className={styles.socials}>
                             <a href="#" className={styles.socialIcon} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
                             <a href="#" className={styles.socialIcon} aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
@@ -47,15 +47,15 @@ export default function Footer() {
                     <div className={styles.contactCol}>
                         <h4>Contact Info</h4>
                         <ul>
-                            <li><i className="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
-                            <li><i className="fas fa-envelope"></i> hello@glamourbyaria.com</li>
-                            <li><i className="fas fa-map-marker-alt"></i> Greater Metro Area</li>
-                            <li><i className="fas fa-clock"></i> Mon-Sat: 9AM - 7PM</li>
+                            <li><i className="fas fa-phone-alt"></i> 0327 8041234</li>
+                            <li><i className="fas fa-envelope"></i> contact@emanbeautics.com</li>
+                            <li><i className="fas fa-map-marker-alt"></i> Salon & Home Service Available</li>
+                            <li><i className="fas fa-clock"></i> Mon-Sat: 10AM - 8PM</li>
                         </ul>
                     </div>
                 </div>
                 <div className={styles.bottom}>
-                    <p>&copy; 2026 Glamour by Aria. All Rights Reserved.</p>
+                    <p>&copy; 2026 Emaan Beautics. All Rights Reserved.</p>
                     <p>Designed with <i className="fas fa-heart"></i> for beauty</p>
                 </div>
             </div>

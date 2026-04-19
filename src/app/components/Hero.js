@@ -24,34 +24,34 @@ export default function Hero() {
             <div className={styles.overlay}></div>
             <div className={styles.particles} ref={particlesRef}></div>
             <div className={styles.content}>
-                <p className={`${styles.tagline} animate-on-scroll`}>✦ Premium Beauty Experience ✦</p>
+                <p className={`${styles.tagline} animate-on-scroll`}>✦ Emaan Beautics - Radiance Redefined ✦</p>
                 <h1 className={`${styles.title} animate-on-scroll`}>
                     <span className={styles.scriptText}>Unveil Your</span>
-                    <span className={styles.mainText}>Radiance</span>
+                    <span className={styles.mainText}>True Glow</span>
                 </h1>
                 <p className={`${styles.description} animate-on-scroll`}>
-                    Professional makeup artistry for your most cherished moments. From bridal elegance to editorial glamour — let your beauty shine.
+                    Emaan Beautics brings luxury beauty care and professional artistry to every appointment. Bridal, party, skin, and hair services tailored to your unique style.
                 </p>
                 <div className={`${styles.buttons} animate-on-scroll`}>
-                    <a href="#services" className="btn btn-primary">View Packages</a>
-                    <a href="#contact" className="btn btn-outline">Book Appointment</a>
+                    <a href="#services" className="btn btn-primary">View Services</a>
+                    <a href="#contact" className="btn btn-outline">Book Now</a>
                 </div>
                 <div className={`${styles.highlights} animate-on-scroll`}>
                     <div className={styles.highlightItem}>
                         <i className="fas fa-gem"></i>
-                        <span>Bridal Makeup</span>
+                        <span>Bridal Beauty</span>
                     </div>
                     <div className={styles.highlightItem}>
                         <i className="fas fa-glass-cheers"></i>
-                        <span>Party Glam</span>
+                        <span>Party Makeup</span>
                     </div>
                     <div className={styles.highlightItem}>
-                        <i className="fas fa-camera"></i>
-                        <span>Photoshoot</span>
+                        <i className="fas fa-spa"></i>
+                        <span>Skin Treatments</span>
                     </div>
                     <div className={styles.highlightItem}>
-                        <i className="fas fa-star"></i>
-                        <span>HD Makeup</span>
+                        <i className="fas fa-cut"></i>
+                        <span>Hair Styling</span>
                     </div>
                 </div>
             </div>

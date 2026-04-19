@@ -43,7 +43,7 @@ export default function About() {
                 <div className={styles.grid}>
                     <div className={`${styles.imageWrap} animate-on-scroll`}>
                         <div className={styles.imageFrame}>
-                            <Image src="/images/about-artist.png" alt="Aria - Professional Makeup Artist" width={500} height={600} className={styles.img} />
+                            <Image src="/images/about-artist.png" alt="Emaan Beautics - Professional Beauty Artist" width={500} height={600} className={styles.img} />
                             <div className={styles.frameDecoration}></div>
                         </div>
                         <div className={styles.expBadge}>
@@ -52,32 +52,32 @@ export default function About() {
                         </div>
                     </div>
                     <div className={`${styles.content} animate-on-scroll`}>
-                        <span className="section-label">About Me</span>
-                        <h2 className="section-title">Hello, I&apos;m <span className="accent">Aria</span></h2>
-                        <p className={styles.lead}>A passionate makeup artist dedicated to enhancing your natural beauty and making every moment unforgettable.</p>
-                        <p className={styles.text}>With over 8 years of experience in the beauty industry, I have had the privilege of transforming hundreds of brides and clients for their most special occasions. My journey began with a deep love for art and beauty, which led me to train under some of the most renowned makeup artists in the industry.</p>
-                        <p className={styles.text}>I specialize in creating flawless, long-lasting looks that photograph beautifully and make you feel confident. Whether it&apos;s your wedding day, a glamorous event, or a professional photoshoot — I bring precision, creativity, and warmth to every session.</p>
+                        <span className="section-label">About Emaan Beautics</span>
+                        <h2 className="section-title">Welcome to <span className="accent">Emaan Beautics</span></h2>
+                        <p className={styles.lead}>A luxury beauty studio offering bridal, party, skin, and hair services designed to make every client feel confident and radiant.</p>
+                        <p className={styles.text}>Emaan Beautics combines expert artistry with high-quality products to deliver beautiful, long-lasting results. From bridal makeup to skin polish and hair styling, every service is customized for your needs.</p>
+                        <p className={styles.text}>Whether you are preparing for your wedding, a special event, or simply want a pampering beauty session, our team brings care, precision, and warmth to every appointment.</p>
                         <div className={styles.stats} ref={statsRef}>
                             <div className={styles.stat}>
                                 <span className={styles.statNumber} data-count="500">0</span><span className={styles.statPlus}>+</span>
                                 <span className={styles.statLabel}>Happy Clients</span>
                             </div>
                             <div className={styles.stat}>
-                                <span className={styles.statNumber} data-count="200">0</span><span className={styles.statPlus}>+</span>
+                                <span className={styles.statNumber} data-count="250">0</span><span className={styles.statPlus}>+</span>
                                 <span className={styles.statLabel}>Bridal Looks</span>
                             </div>
                             <div className={styles.stat}>
-                                <span className={styles.statNumber} data-count="50">0</span><span className={styles.statPlus}>+</span>
-                                <span className={styles.statLabel}>Editorials</span>
+                                <span className={styles.statNumber} data-count="80">0</span><span className={styles.statPlus}>+</span>
+                                <span className={styles.statLabel}>Beauty Treatments</span>
                             </div>
                         </div>
                         <div className={styles.certs}>
-                            <h4>Certifications & Training</h4>
+                            <h4>Expertise & Training</h4>
                             <ul>
-                                <li><i className="fas fa-certificate"></i> Certified Bridal Makeup Artist</li>
-                                <li><i className="fas fa-certificate"></i> HD & Airbrush Makeup Specialist</li>
-                                <li><i className="fas fa-certificate"></i> Advanced Contouring & Color Theory</li>
-                                <li><i className="fas fa-certificate"></i> International Beauty Academy Graduate</li>
+                                <li><i className="fas fa-certificate"></i> Bridal & Bridal Party Makeup</li>
+                                <li><i className="fas fa-certificate"></i> Skin Renewal & Facial Treatments</li>
+                                <li><i className="fas fa-certificate"></i> Hair Styling & Keratin Care</li>
+                                <li><i className="fas fa-certificate"></i> Professional Beauty Makeovers</li>
                             </ul>
                         </div>
                     </div>

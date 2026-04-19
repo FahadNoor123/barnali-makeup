@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
-
+import Image from "next/image";
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,8 +18,17 @@ export default function Navbar() {
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.navContainer}>
                 <a href="#home" className={styles.logo}>
-                    <span className={styles.logoScript}>Glamour</span>
-                    <span className={styles.logoSub}>by Aria</span>
+                    <Image
+                        src="/images/logo.png"
+                        alt="Emaan Beautics logo"
+                        width={105}
+                        height={105}
+                        className={styles.logoImage}
+                    />
+                    <div className={styles.logoText}>
+                        <span className={styles.main}>Emaan</span>
+                        <span className={styles.sub}>Beautics</span>
+                    </div>
                 </a>
                 <button
                     className={`${styles.navToggle} ${menuOpen ? styles.active : ''}`}

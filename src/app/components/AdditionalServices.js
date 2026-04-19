@@ -1,11 +1,11 @@
 import styles from './AdditionalServices.module.css';
 
 const addons = [
-    { icon: 'fas fa-cut', title: 'Hair Styling', desc: 'Elegant updos, curls, braids, and sleek styles for every occasion.', price: 'From $60' },
-    { icon: 'fas fa-vest', title: 'Saree / Dupatta Draping', desc: 'Expert draping for a perfect silhouette on your special day.', price: 'From $30' },
-    { icon: 'fas fa-eye', title: 'Eyelash Application', desc: 'Premium strip or individual lashes for dramatic or natural effects.', price: 'From $20' },
-    { icon: 'fas fa-palette', title: 'Makeup Trials', desc: 'Pre-event trials to perfect your look before the big day.', price: 'From $80' },
-    { icon: 'fas fa-home', title: 'Home Service', desc: 'Enjoy a luxurious makeup experience in the comfort of your home.', price: 'Available' },
+    { icon: 'fas fa-cut', title: 'Simple Hair Styling', desc: 'Clean, elegant styling for daily wear or casual events.', price: 'Rs 500' },
+    { icon: 'fas fa-burn', title: 'Blowdryer Hair Styling', desc: 'Voluminous blowdry styling that stays smooth and polished.', price: 'Rs 1,500' },
+    { icon: 'fas fa-spa', title: 'Keratin Treatment', desc: 'Smoothing care to nourish hair and reduce frizz for weeks.', price: 'Custom Pricing' },
+    { icon: 'fas fa-water', title: 'Botox Hair Treatment', desc: 'Deep conditioning and shine restoration for soft, healthy hair.', price: 'Custom Pricing' },
+    { icon: 'fas fa-magic', title: 'Nanoplastia', desc: 'Advanced hair smoothing treatment for sleek, long-lasting results.', price: 'Custom Pricing' },
 ];
 
 export default function AdditionalServices() {
@@ -13,9 +13,9 @@ export default function AdditionalServices() {
         <section className={`${styles.section} section`}>
             <div className="container">
                 <div className="section-header animate-on-scroll">
-                    <span className="section-label">More Offerings</span>
-                    <h2 className="section-title">Additional <span className="accent">Services</span></h2>
-                    <p className="section-subtitle">Complement your makeup with these premium add-on services for a complete look.</p>
+                    <span className="section-label">Beauty Extras</span>
+                    <h2 className="section-title">Hair & Skin <span className="accent">Treatments</span></h2>
+                    <p className="section-subtitle">Complete your look with expert hair and skin services designed for beauty and confidence.</p>
                 </div>
                 <div className={styles.grid}>
                     {addons.map((a, i) => (
