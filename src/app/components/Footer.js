@@ -17,7 +17,7 @@ export default function Footer() {
                         </a>
                         <p>Professional beauty services for your most cherished moments. Enhancing confidence with every look.</p>
                         <div className={styles.socials}>
-                            <a href="#" className={styles.socialIcon} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/eman_beautics?igsh=NnptbWtmZDViZjVj" className={styles.socialIcon} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
                             <a href="#" className={styles.socialIcon} aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
                             <a href="#" className={styles.socialIcon} aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
                             <a href="#" className={styles.socialIcon} aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
@@ -47,17 +47,29 @@ export default function Footer() {
                     <div className={styles.contactCol}>
                         <h4>Contact Info</h4>
                         <ul>
-                            <li><i className="fas fa-phone-alt"></i> 0327 8041234</li>
+                            <li><i className="fas fa-phone-alt"></i> 03278045325</li>
                             <li><i className="fas fa-envelope"></i> contact@emanbeautics.com</li>
                             <li><i className="fas fa-map-marker-alt"></i> Salon & Home Service Available</li>
                             <li><i className="fas fa-clock"></i> Mon-Sat: 10AM - 8PM</li>
                         </ul>
                     </div>
                 </div>
-                <div className={styles.bottom}>
-                    <p>&copy; 2026 Emaan Beautics. All Rights Reserved.</p>
-                    <p>Designed with <i className="fas fa-heart"></i> for beauty</p>
-                </div>
+            <div className={styles.bottom}>
+  <p>&copy; 2026 Emaan Beautics. All Rights Reserved.</p>
+
+  <p>
+    Designed with <i className="fas fa-heart"></i> by {" "}
+    <a 
+      href="https://wa.me/923088265224" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className={styles.whatsappLink}
+    > 
+      <i className={`fab fa-whatsapp ${styles.icon}`}></i> {" "}
+      Mr Ahmed
+    </a>
+  </p>
+</div>
             </div>
         </footer>
     );

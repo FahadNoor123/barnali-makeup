@@ -5,12 +5,26 @@ import styles from './Contact.module.css';
 export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 4000);
-    };
+   const handleSubmit = (e) => {
+  e.preventDefault();
 
+  const name = e.target.name.value;
+  const phone = e.target.phone.value;
+  const email = e.target.email.value;
+  const service = e.target.package.value; // 🔥 FIXED
+  const message = e.target.message.value;
+
+  const text = `Hi, I want to book an appointment:
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Service: ${service}
+Message: ${message}`;
+
+  const url = `https://wa.me/03278045325?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank");
+};
     return (
         <section id="contact" className={`${styles.contact} section`}>
             <div className="container">
@@ -24,7 +38,7 @@ export default function Contact() {
                                 <i className="fas fa-phone-alt"></i>
                                 <div>
                                     <h5>Phone</h5>
-                                    <p>0327 8041234</p>
+                                    <p>03278045325</p>
                                 </div>
                             </div>
                             <div className={styles.item}>
@@ -50,10 +64,18 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className={styles.socials}>
-                            <a href="#" className={styles.socialIcon} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/eman_beautics?igsh=NnptbWtmZDViZjVj" className={styles.socialIcon} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
                             <a href="#" className={styles.socialIcon} aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
                             <a href="#" className={styles.socialIcon} aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
-                            <a href="#" className={styles.socialIcon} aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
+                            <a 
+                                href="https://wa.me/03278045325" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className={styles.socialIcon} 
+                                aria-label="WhatsApp"
+                                >
+                                <i className="fab fa-whatsapp"></i>
+                                </a>
                         </div>
                     </div>
                     <div className={`${styles.formWrap} animate-on-scroll`}>
@@ -89,19 +111,19 @@ export default function Contact() {
                                         <label htmlFor="package">Select Package</label>
                                         <select id="package" required defaultValue="">
                                             <option value="" disabled>Choose a package</option>
-                                            <option value="whitening">Whitening Facial - Rs 3,000</option>
-                                            <option value="skinpolish">Skin Polish with Hand & Feet - Rs 1,500</option>
-                                            <option value="waxing">Full Face Waxing - Rs 800</option>
-                                            <option value="manicure">Manicure & Pedicure - Rs 3,000</option>
-                                            <option value="mehndi">Mehndi Full Hands - Rs 1,000</option>
-                                            <option value="bridalMehndi">Bridal Mehndi - Rs 5,000</option>
-                                            <option value="bridal">Bridal Makeup - Rs 20,000</option>
-                                            <option value="engagement">Engagement Makeup - Rs 5,000</option>
-                                            <option value="nikah">Nikah Makeup - Rs 7,000</option>
-                                            <option value="party">Party Makeup - Rs 3,000</option>
-                                            <option value="hairStyling">Simple Hair Styling - Rs 500</option>
-                                            <option value="blowdry">Blowdryer Styling - Rs 1,500</option>
-                                            <option value="treatment">Keratin / Botox / Nanoplastia</option>
+                                            <option value="Whitening Facial - Rs 3,000">Whitening Facial - Rs 3,000</option>
+                                            <option value="Skin Polish with Hand & Feet - Rs 1,500">Skin Polish with Hand & Feet - Rs 1,500</option>
+                                            <option value="Full Face Waxing - Rs 800">Full Face Waxing - Rs 800</option>
+                                            <option value="Manicure & Pedicure - Rs 3,000">Manicure & Pedicure - Rs 3,000</option>
+                                            <option value="Mehndi Full Hands - Rs 1,000">Mehndi Full Hands - Rs 1,000</option>
+                                            <option value="Bridal Mehndi - Rs 5,000">Bridal Mehndi - Rs 5,000</option>
+                                            <option value="Bridal Makeup - Rs 20,000">Bridal Makeup - Rs 20,000</option>
+                                            <option value="Engagement Makeup - Rs 5,000">Engagement Makeup - Rs 5,000</option>
+                                            <option value="Nikah Makeup - Rs 7,000">Nikah Makeup - Rs 7,000</option>
+                                            <option value="Party Makeup - Rs 3,000">Party Makeup - Rs 3,000</option>
+                                            <option value="Simple Hair Styling - Rs 500">Simple Hair Styling - Rs 500</option>
+                                            <option value="Blowdryer Styling - Rs 1,500">Blowdryer Styling - Rs 1,500</option>
+                                            <option value="Keratin / Botox / Nanoplastia">Keratin / Botox / Nanoplastia</option>
                                         </select>
                                     </div>
                                 </div>
